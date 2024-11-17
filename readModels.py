@@ -4,7 +4,7 @@ import sys
 from monotonic_functions import is_monotonic_cnf
 path = 'biodivine-boolean-models/models' #the BBM dataset is downloaded
 os.chdir(path)
-for i in random.sample(range(227), 150): # TODO: didnt do: 122,125-126,132,134,148,151,154,156-227
+for i in random.sample(range(227), 150): 
     dire = os.listdir()[i]
     if os.path.isdir(dire):
         os.chdir(dire)
